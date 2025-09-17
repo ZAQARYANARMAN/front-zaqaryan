@@ -11,9 +11,7 @@ function Header({ setValue }) {
   const handlerOpenMenu = () => setIsOpenMenu(true);
   const handlerCloseMenu = () => setIsOpenMenu(false);
 
-  const handlerFilteredData = (event) => {
-      setValue(event.target.value)
-  }
+  const handlerFilteredData = (event) => setValue(event.target.value)
 
   return (
     <div className={styles.container}>
@@ -40,9 +38,6 @@ function Header({ setValue }) {
       <div className={styles.rightSide}>
         <input type="text" onChange={event => handlerFilteredData(event)} />
         <img src={searchIcon} alt="search" width="16px" height="16px" />
-      </div>
-      <div className={styles.menuContainer}>
-        <Menu handlerCloseMenu={handlerCloseMenu} />
       </div>
     </div>
   );

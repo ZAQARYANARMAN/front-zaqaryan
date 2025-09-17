@@ -34,16 +34,6 @@
     display: none;
 }
 
-.menuContainer {
-    background-color: white;
-  width: 100%;
-  margin-top: 3rem;
-  position: sticky;
-  top: 0;
-  border: 2px solid #E9E9E9;
-  transition: transform 0.3s ease;
-}
-
 .rightSide {
     width: 16px;
     height: 30px;
@@ -52,7 +42,7 @@
     position: relative;
 }
 
-.rightSide > input {
+.rightSide>input {
     width: 200px;
     height: 100%;
     font-size: 0.9rem;
@@ -68,11 +58,11 @@
     letter-spacing: 0.7px;
 }
 
-.rightSide:hover > img {
+.rightSide:hover>img {
     transform: translateX(-197px);
 }
 
-.rightSide:hover > input {
+.rightSide:hover>input {
     display: block;
 }
 
@@ -88,13 +78,9 @@
     }
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) {
     .menuIcon {
         display: block;
-    }
-
-    .menuContainer {
-        display: none;
     }
 }
 

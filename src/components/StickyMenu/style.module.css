@@ -1,0 +1,14 @@
+.menuContainer {
+    background-color: white;
+    width: 100%;
+    margin-top: 3rem;
+    position: sticky;
+    top: 0;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    z-index: 12;
+}
+
+.animated {
+    transform: translateY(-100%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
