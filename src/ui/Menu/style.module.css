@@ -1,0 +1,100 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topPart {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    display: none;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.closeIcon {
+    cursor: pointer;
+}
+
+.menuList {
+    width: max-content;
+    display: flex;
+}
+
+.menuListBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+}
+
+.menuListBlock > h5 {
+    font-size: 1rem;
+    width: max-content;
+    padding: 20px 20px 20px 0;
+}
+
+.menuListBlockLinkList {
+    background-color: rgb(255, 255, 255);
+    width: 240%;
+    flex-direction: column;
+    padding: 10px 20px;
+    border: 1px solid #E9E9E9;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.menuListBlockLinkList > a {
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 12px 0;
+}
+
+.menuListBlockLinkList > a:hover {
+    color: rgb(120, 120, 120);
+}
+
+.menuListBlock:hover .menuListBlockLinkList {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .topPart {
+        width: 94%;
+        display: flex;
+    }
+
+    .menuList {
+        width: 94%;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .menuListBlockLinkList {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logoIcon {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logoIcon {
+        width: 49%;
+    }
+}

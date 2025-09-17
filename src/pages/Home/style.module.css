@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 1%;
+    padding: 30px 10% 0;
+}
+
+.container > div {
+    width: calc(98% / 3);
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 30px 3% 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container > div {
+        width: calc(98% / 2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 30px 10% 0;
+    }
+
+    .container > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px 1% 0;
+    }
+}

@@ -1,0 +1,111 @@
+.container {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0 0 0;
+    position: relative;
+}
+
+.openMenuForTelephone,
+.closeMenuForTelephone {
+    background-color: white;
+    width: 90%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.openMenuForTelephone {
+    transform: translateY(0);
+    box-shadow: 0 10px 100px rgb(101, 101, 101);
+}
+
+.closeMenuForTelephone {
+    transform: translateX(-100%);
+}
+
+.menuIcon {
+    cursor: pointer;
+    display: none;
+}
+
+.menuContainer {
+    background-color: white;
+  width: 100%;
+  margin-top: 3rem;
+  position: sticky;
+  top: 0;
+  border: 2px solid #E9E9E9;
+  transition: transform 0.3s ease;
+}
+
+.rightSide {
+    width: 16px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.rightSide > input {
+    width: 200px;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    position: absolute;
+    right: 100%;
+    top: calc(50% - 50%);
+    border: none;
+    display: none;
+    outline: none;
+    border-bottom: 1px solid #191919;
+    padding-left: 24px;
+    letter-spacing: 0.7px;
+}
+
+.rightSide:hover > img {
+    transform: translateX(-197px);
+}
+
+.rightSide:hover > input {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .logoIcon {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logoIcon {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .menuIcon {
+        display: block;
+    }
+
+    .menuContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logoIcon {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logoIcon {
+        width: 40%;
+    }
+}
